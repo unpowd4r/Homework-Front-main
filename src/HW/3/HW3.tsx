@@ -21,9 +21,7 @@ export const HW3 = () => {
 	}
 
 	const handleSave = () => {
-		const updatedTexts = [...texts]
-		updatedTexts.push(currentText)
-		setTexts(updatedTexts)
+		setTexts([...texts, currentText])
 		setCurrentText('')
 	}
 
@@ -32,7 +30,7 @@ export const HW3 = () => {
 			{currentText ? (
 				<h1 id={'hw03-text'}>{currentText}</h1>
 			) : (
-				<h1 id={'hw03-default-text'}>{texts}</h1>
+				<h1 id={'hw03-default-text'}>Здесь появится новое дело</h1>
 			)}
 
 			<input
