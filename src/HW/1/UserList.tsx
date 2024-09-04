@@ -16,7 +16,7 @@ type UserListPropsType = {
 
 export const UserList = ({ users }: UserListPropsType) => {
 	return (
-		<div id={String(users[0].id)}>
+		<div id={'hw01-users'}>
 			<h2>User List:</h2>
 
 			<ul>
